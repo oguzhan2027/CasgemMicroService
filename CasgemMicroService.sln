@@ -33,11 +33,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{0E6B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{4886B471-DB73-4E40-98B7-F60088EEFD9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroService.Services.Catalog", "Services\Catalog\CasgemMicroService.Services.Catalog\CasgemMicroService.Services.Catalog.csproj", "{7D92BE1E-45F1-47E3-AB95-DEB06A462220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.Services.Catalog", "Services\Catalog\CasgemMicroService.Services.Catalog\CasgemMicroService.Services.Catalog.csproj", "{7D92BE1E-45F1-47E3-AB95-DEB06A462220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroService.Shared", "Shared\CasgemMicroService.Shared\CasgemMicroService.Shared.csproj", "{323CD289-6EAC-4421-95CE-1D8CDE349E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.Shared", "Shared\CasgemMicroService.Shared\CasgemMicroService.Shared.csproj", "{323CD289-6EAC-4421-95CE-1D8CDE349E02}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.IdentityServer", "IdentityServer\CasgemMicroService.IdentityServer\CasgemMicroService.IdentityServer.csproj", "{B1EF7138-459F-48D8-9C27-47EC12FD0E3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.PhotoStock", "Services\PhotoStock\CasgemMicroService.PhotoStock\CasgemMicroService.PhotoStock.csproj", "{CFE95230-13B0-49C2-A672-C995F4F9A41F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.Services.Basket", "Services\Basket\CasgemMicroService.Services.Basket\CasgemMicroService.Services.Basket.csproj", "{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroService.Services.Discount", "Services\Discount\CasgemMicroService.Services.Discount\CasgemMicroService.Services.Discount.csproj", "{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{B1EF7138-459F-48D8-9C27-47EC12FD0E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1EF7138-459F-48D8-9C27-47EC12FD0E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1EF7138-459F-48D8-9C27-47EC12FD0E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE95230-13B0-49C2-A672-C995F4F9A41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE95230-13B0-49C2-A672-C995F4F9A41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE95230-13B0-49C2-A672-C995F4F9A41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE95230-13B0-49C2-A672-C995F4F9A41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +90,9 @@ Global
 		{7D92BE1E-45F1-47E3-AB95-DEB06A462220} = {8EE4BE8E-1B39-465A-A5BA-1A87B21D381C}
 		{323CD289-6EAC-4421-95CE-1D8CDE349E02} = {6328CC01-8908-4A0C-8954-453B3CDD0DC5}
 		{B1EF7138-459F-48D8-9C27-47EC12FD0E3A} = {A4A9940B-5712-4938-AD38-22F188942BEC}
+		{CFE95230-13B0-49C2-A672-C995F4F9A41F} = {4886B471-DB73-4E40-98B7-F60088EEFD9B}
+		{F9F6C3D0-2F92-4CAF-90E1-FE1AAA74AE86} = {1643B3A9-4F4D-4FED-97A6-26D011E2717E}
+		{816F7EDA-EBDF-4D4F-8720-ECB83C8B32DA} = {1A99D0D8-28A1-4908-A9DD-D7936855D8B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96118E7C-E2C9-455E-99D4-28C34D507C41}
