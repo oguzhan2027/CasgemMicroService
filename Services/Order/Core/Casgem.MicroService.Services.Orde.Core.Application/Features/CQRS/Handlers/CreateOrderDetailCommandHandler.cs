@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Casgem.MicroService.Services.Orde.Core.Application.Dtos.AddressDtos;
 using Casgem.MicroService.Services.Orde.Core.Application.Features.CQRS.Commands;
 using Casgem.MicroService.Services.Orde.Core.Application.Interfaces;
 using CasgemMicroService.Services.Order.Core.Domain.Entities;
@@ -12,28 +11,30 @@ using System.Threading.Tasks;
 
 namespace Casgem.MicroService.Services.Orde.Core.Application.Features.CQRS.Handlers
 {
-    public class CreateAddressCommandHandler : IRequestHandler<CreateAddressCommandRequest>
+    public class CreateOrderDetailCommandHandler : IRequestHandler<CreateOrderDetailCommandRequest>
     {
-        private readonly IRepository<Address> _repository;
+        private readonly IRepository<OrderDetail> _repository;
         private readonly IMapper _mapper;
 
-        public CreateAddressCommandHandler(IRepository<Address> repository, IMapper mapper)
+        public CreateOrderDetailCommandHandler(IRepository<OrderDetail> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
         }
 
-        public Task Handle(CreateAddressCommandRequest request, CancellationToken cancellationToken)
+        public Task Handle(CreateOrderDetailCommandRequest request, CancellationToken cancellationToken)
         {
-            var values = new Address
+            var values = new OrderDetail
             {
-                City = request.City,
-                Detail = request.Detail,
-                District = request.District,
-                UserID = request.UserID,
+               ProductID = request.ProductID,
+               ProductName = request.ProductName,
+               ProductAmount = request.ProductAmount,
+               ProductPrice = request.ProductPrice,
+               OrderingID = request.OrderingID,
 
             };
             return _repository.CreateGetAsync(values);
         }
     }
+    
 }

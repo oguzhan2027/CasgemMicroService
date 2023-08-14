@@ -16,6 +16,7 @@ namespace CasgemMicroService.IdentityServer
             new ApiResource("resource_photostock"){Scopes={"photostock_fullpermission"}},
             new ApiResource("resource_basket"){Scopes={"basket_fullpermission"}},
             new ApiResource("resource_discount"){Scopes={"discount_fullpermission"}},
+            new ApiResource("resource_order"){Scopes={"order_fullpermission"}},
 
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
@@ -34,6 +35,7 @@ namespace CasgemMicroService.IdentityServer
                  new ApiScope("photostock_fullpermission","fotograf işlemleri için tam erişim"),
                  new ApiScope("basket_fullpermission","sepet işlemleri için tam erişim"),
                  new ApiScope("discount_fullpermission","discount işlemleri için tam erişim"),
+                 new ApiScope("order_fullpermission","order işlemleri için tam erişim"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -59,7 +61,7 @@ namespace CasgemMicroService.IdentityServer
                     ClientName = "casgem2 client name",
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photostock_fullpermission","discount_fullpermission",
+                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photostock_fullpermission","discount_fullpermission","order_fullpermission",
                         IdentityServerConstants.LocalApi.ScopeName, IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile },
                     AccessTokenLifetime=3600

@@ -13,5 +13,6 @@ namespace Casgem.MicroService.Services.Orde.Core.Application.Interfaces
         Task<T> CreateGetAsync(T entity);
         Task<T> UpdateGetAsync(T entity);
         Task<T> DeleteGetAsync(T entity);
+        Task<List<T>> GetOrdersById(string UserId);
     }
 }

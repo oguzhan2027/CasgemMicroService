@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Casgem.MicroService.Services.Orde.Core.Application.Features.CQRS.Qeries
 {
-    public class GetAllOrderingQueryRequest : IRequest<ResultOrderingDto>
+    public class GetAllOrderingQueryRequest : IRequest<List<ResultOrderingDto>>
     {
     }
 }
