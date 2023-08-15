@@ -15,10 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\CasgemMicroService.Services.Cargo.BussinessLayer\CasgemMicroService.Services.Cargo.BussinessLayer.csproj" />
     <ProjectReference Include="..\CasgemMicroService.Services.Cargo.DataAccessLayer\CasgemMicroService.Services.Cargo.DataAccessLayer.csproj" />
   </ItemGroup>
 
