@@ -17,8 +17,10 @@ namespace CasgemMicroService.IdentityServer
             new ApiResource("resource_basket"){Scopes={"basket_fullpermission"}},
             new ApiResource("resource_discount"){Scopes={"discount_fullpermission"}},
             new ApiResource("resource_order"){Scopes={"order_fullpermission"}},
+			new ApiResource("resource_cargo"){Scopes={"cargo_fullpermission"}},
+			new ApiResource("resource_payment"){Scopes={"payment_fullpermission"}},
 
-            new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+			new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
         public static IEnumerable<IdentityResource> IdentityResources =>
                    new IdentityResource[]
@@ -36,7 +38,9 @@ namespace CasgemMicroService.IdentityServer
                  new ApiScope("basket_fullpermission","sepet işlemleri için tam erişim"),
                  new ApiScope("discount_fullpermission","discount işlemleri için tam erişim"),
                  new ApiScope("order_fullpermission","order işlemleri için tam erişim"),
-                new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
+				 new ApiScope("cargo_fullpermission","cargo işlemleri için tam erişim"),
+				  new ApiScope("payment_fullpermission","payment işlemleri için tam erişim"),
+				new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
         public static IEnumerable<Client> Clients =>
@@ -61,8 +65,8 @@ namespace CasgemMicroService.IdentityServer
                     ClientName = "casgem2 client name",
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photostock_fullpermission","discount_fullpermission","order_fullpermission",
-                        IdentityServerConstants.LocalApi.ScopeName, IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId,
+                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photostock_fullpermission","discount_fullpermission","order_fullpermission","cargo_fullpermission","payment_fullpermission",
+						IdentityServerConstants.LocalApi.ScopeName, IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile },
                     AccessTokenLifetime=3600
                 },
